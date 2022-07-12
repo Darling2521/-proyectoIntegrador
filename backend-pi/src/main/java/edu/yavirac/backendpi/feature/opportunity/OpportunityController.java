@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/opportunity")
 public class OpportunityController {
 
     @Autowired

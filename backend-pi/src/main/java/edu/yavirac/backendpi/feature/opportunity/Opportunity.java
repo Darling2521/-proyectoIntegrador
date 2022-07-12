@@ -1,6 +1,6 @@
 package edu.yavirac.backendpi.feature.opportunity;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
@@ -14,7 +14,7 @@ public class Opportunity {
     
     @Id
     @Column("opportunity_id")
-    private long id;
+    private long opportunityId;
     @Column("prospect_id")
     private Integer prospectId;
     @Column("stage_id")
