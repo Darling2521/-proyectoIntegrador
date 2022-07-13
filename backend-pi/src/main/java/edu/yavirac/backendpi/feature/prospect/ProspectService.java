@@ -16,17 +16,9 @@ public class ProspectService {
         return prospectRepository.save(prospect);
     }
 
-    //read
     public Prospect findById (long id){
         return prospectRepository.findById(id).orElse(new Prospect());
     }
-    
-    //update=create
-
-    public void deleteById (long id){
-        prospectRepository.deleteById(id);
-    }
-
     public List<Prospect> findAll(){
         return prospectRepository.findAll();
     }

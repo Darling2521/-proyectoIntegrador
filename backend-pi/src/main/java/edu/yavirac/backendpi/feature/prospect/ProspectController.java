@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -38,13 +38,6 @@ ProspectService prospectService;
     public Prospect update (@RequestBody Prospect prospect){
         return prospectService.save(prospect);
     }
-
-    //delete
-    @DeleteMapping("/delete/{id}")
-    public void deleteById (@PathVariable long id){
-        prospectService.deleteById(id);
-    }
-
     
     @GetMapping("/all")
      public List<Prospect> findAll(){
