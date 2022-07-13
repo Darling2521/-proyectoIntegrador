@@ -7,6 +7,7 @@ import { OpportunityComponent } from './feature/opportunity/opportunity.componen
 import { CampaignComponent } from './feature/campaign/campaign.component';
 import { ProspectComponent } from './feature/prospect/prospect.component';
 import { ProductComponent } from './feature/product/product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductComponent } from './feature/product/product.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
