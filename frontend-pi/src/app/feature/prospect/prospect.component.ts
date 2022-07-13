@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-prospect',
-  templateUrl: './prospect.component.html',
-  styleUrls: ['./prospect.component.css']
+  templateUrl: './prospect.component.html'
+
 })
 export class ProspectComponent implements OnInit {
 
