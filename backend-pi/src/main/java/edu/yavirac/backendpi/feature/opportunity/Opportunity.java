@@ -15,6 +15,8 @@ public class Opportunity {
     @Id
     @Column("opportunity_id")
     private long opportunityId;
+    @Column("prospect_id")
+    private Integer prospectId;
     @Column("stage_id")
     private Integer stageId;
     @Column("vendor_id")
