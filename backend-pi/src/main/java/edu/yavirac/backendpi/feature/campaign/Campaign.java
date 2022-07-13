@@ -3,6 +3,7 @@ package edu.yavirac.backendpi.feature.campaign;
 
 
 
+
 import java.sql.Timestamp;
 
 import org.springframework.data.annotation.Id;
@@ -17,8 +18,8 @@ public class Campaign {
     @Id
     @Column("campaign_id")
     private long campaignId;
-    @Column("promotionid")
-    private String promotionId;
+    @Column("promotion_id")
+    private Integer promotionId;
     private String advertisingMedia;
     private Timestamp startDate;
     private Timestamp finalDate;
