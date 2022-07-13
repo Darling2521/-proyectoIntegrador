@@ -1,5 +1,6 @@
 package edu.yavirac.backendpi.feature.opportunity;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,29 +14,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
 @RequestMapping("/api/opportunity")
+=======
+>>>>>>> ca3ab944e700483eacec4ecf0c9a6e01a3957d33
 public class OpportunityController {
-
-    @Autowired
-    OpportunityService opportunityService;
-
-    @PostMapping("/save")
-    public Opportunity save(@RequestBody Opportunity opportunity){
-        return opportunityService.save(opportunity);
-    }
-
-    @GetMapping("/{id}")
-    public Opportunity findById(@PathVariable long id) {
-        return opportunityService.findById(id);
-    }
-
-    @PutMapping("/update")
-    public Opportunity update(@RequestBody Opportunity opportunity){
-        return opportunityService.save(opportunity);
-    }
-
-    @GetMapping("/all")
-    public List<Opportunity> findAll(){
-        return opportunityService.findAll();
-    }
     
 }

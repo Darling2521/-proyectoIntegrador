@@ -1,5 +1,6 @@
 package edu.yavirac.backendpi.feature.opportunity;
 
+<<<<<<< HEAD
 import java.sql.Timestamp;
 
 import org.springframework.data.annotation.Id;
@@ -28,4 +29,8 @@ public class Opportunity {
     private Timestamp updated;
     private boolean enable;
 
+=======
+public class Opportunity {
+    
+>>>>>>> ca3ab944e700483eacec4ecf0c9a6e01a3957d33
 }
