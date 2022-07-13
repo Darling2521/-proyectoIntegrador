@@ -8,6 +8,7 @@ import { CampaignComponent } from './feature/campaign/campaign.component';
 import { ProspectComponent } from './feature/prospect/prospect.component';
 import { ProductComponent } from './feature/product/product.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
