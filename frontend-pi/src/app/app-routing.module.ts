@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: 'campaign', component:CampaignComponent},
   {path: 'product' , component:ProductComponent},
   {path: 'opportunity' , component:OpportunityComponent},
-  {path: 'prospect' , component:ProspectComponent}
+  {path: 'prospect' , component:ProspectComponent},
+  {path: 'prospect/:prospect_id', component:ProspectComponent}
 ];
 
 @NgModule({
